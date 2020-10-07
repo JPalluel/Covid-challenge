@@ -1,0 +1,664 @@
+/*header nav and banner */
+
+header{
+    background-image: url(https://raw.githubusercontent.com/becodeorg/Startup-Brussels-Johnson-5.25/master/1.The-Field/week_03/covid-19-challenge/images/header-banner.jpg?token=AQ3NSGGBG2ZLVNXXUJA453C7QRMUI);
+}
+
+nav{
+    padding: 50px;
+    text-align: center;
+    display: inline-block;
+    
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li{
+        display: inline-block;
+        margin: 10px;
+        color: white;
+    }
+    
+    #navlogo{
+        margin-right: 200px;
+    }
+
+    button{
+        background-color:#F3265A;
+        border-radius: 50px;
+        color:white;
+        padding: 10px 15px 10px 15px;
+        border: none;
+    }
+}
+
+#banner{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: 250px;
+    padding-top: 100px;
+    
+    #bannertext{
+        text-align: left;
+        padding: 30px;
+    }
+    
+        h1{
+            font-weight: bold;
+            font-size: 60px;
+        }
+
+        button{
+            background-color:#F3265A;
+            border-radius: 50px;
+            color: white;
+            border:none;
+            padding: 10px 15px 10px 15px;
+            margin-top: 10px;
+        }
+    #bannerimage{
+        width: 1000px;
+        float:right;
+    }
+}
+
+
+/*main content*/
+
+/*bannernumber*/
+
+.gridcontainer{
+    background-image: url(https://raw.githubusercontent.com/becodeorg/Startup-Brussels-Johnson-5.25/master/1.The-Field/week_03/covid-19-challenge/images/statistics-bg.png?token=AQ3NSGGKUZKTMD4EEUO5UDC7QVLBK);
+    background-image: cover;
+    display:grid;
+    grid-template-columns:repeat(11, auto);
+    grid-template-rows: 175px;
+    .totalcase{
+        background-image: url(viruspink.png);
+        height: 150px;
+        background-repeat: no-repeat;
+        align-self: center;
+        grid-column: 3/4;
+        margin-left: 100px;
+            h4{
+                margin-top: 100px;
+                margin-left:-70px;
+                color:#FD435D;
+            }
+        }
+    .totaldeaths{
+        background-image: url(virusred.png);
+        height: 150px;
+        background-repeat: no-repeat;
+        align-self: center;
+        grid-column: 5/6;
+            h4{
+                margin-top: 100px;
+                margin-left:-30px;
+                color:#A60548;
+            }
+        }
+    .recovered{
+        background-image: url(viruspurple.png);
+        height: 150px;
+        background-repeat: no-repeat;
+        align-self: center;
+        grid-column: 7/8;
+            h4{
+                margin-top: 100px;
+                margin-left:-15px;
+                color:#7218B3;
+            }
+        }
+    .countries{
+        background-image: url(virusorange.png);
+        height: 150px;
+        background-repeat: no-repeat;
+        align-self: center;
+        grid-column: 9/10;
+            h4{
+                margin-top: 100px;
+                margin-left:-15px;
+                color:#DA6603;
+            }
+    }    
+}
+
+.totalcase:hover{
+    background-image:url(viruspink2.png);
+}
+
+.totaldeaths:hover{
+    background-image: url(virusred2.png);
+}
+
+.recovered:hover {
+    background-image: url(viruspurple2.png);
+}
+
+.countries:hover{
+    background-image: url(virusorange2.png);
+}
+
+/* what is covid*/
+
+.container{
+    line-height: 1.65em;
+
+        h1{
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 14px;
+        }
+        
+        h6{
+            font-size: 14px;
+            font-style: italic;
+        }
+}
+
+/*symptoms*/
+
+#symptomscontainer{
+    background-image: url(https://raw.githubusercontent.com/becodeorg/Startup-Brussels-Johnson-5.25/master/1.The-Field/week_03/covid-19-challenge/images/symptoms-bg.png?token=AQ3NSGH5C3JFIENRJFPYEAC7QVXUE);
+    height: 1000px;
+}
+
+.gridsymptoms{
+    width: 1200px;
+    margin:auto;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(12 auto);
+    grid-column-gap: 100px;
+    text-align: center;
+    color:#3B3C4C;
+        h1{
+            font-weight: bold;
+        }
+        h6{
+            font-style: italic;
+            color:#787CA7;
+            font-size: 14px;
+        }
+        .symptoms{
+            grid-row:1/2;
+            grid-column: 1/12;
+            text-align:center;
+            margin-top: 100px;
+            margin-left:100px;
+        }
+        .headache{
+            grid-row: 2/3;
+            grid-column:1/5;
+            margin-top: 70px;
+            text-align: center;
+            
+            .imgcontainer1{
+                background-image: url(sprite1.png);
+                background-repeat: no-repeat;
+                background-position: 1px 10px;
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                border-radius: 50%;
+                border: 1px dashed black;
+            }
+
+            .imgcontainer1:hover{
+                background-position:-1px -180px;
+                background-color:#FD435D;
+                transition: background 0.5s;
+                
+            }
+        }
+        .fever{
+            grid-row: 2/3;
+            grid-column: 5/9;
+            margin-top: 70px;
+            text-align: center;
+            .imgcontainer2{
+                background-image: url(sprite2.png);
+                background-repeat: no-repeat;
+                background-position: -10px 10px;
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                border-radius: 50%;
+                border: 1px dashed black;
+            }
+            .imgcontainer2:hover{
+                background-position: -8px -180px;
+                background-color:#FD435D;
+                transition: background 0.5s;
+
+            }
+
+        }
+        .cough{
+            grid-row:2/3;
+            grid-column:9/13;
+            margin-top: 70px;
+            text-align: center;
+            .imgcontainer3{
+                background-image: url(sprite3.png);
+                background-repeat: no-repeat;
+                background-position: -8px 11px;
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                border-radius: 50%;
+                border: 1px dashed black;
+            }
+            .imgcontainer3:hover{
+                background-position: -7px -178px;
+                background-color:#FD435D;
+                transition: background 0.5s;
+            }
+        }
+        .breath{
+            grid-row: 3/4;
+            grid-column:1/5;
+            margin-top: 70px;
+            text-align: center;
+            .imgcontainer4{
+                display: inline-block;
+                background-image: url(sprite1.png);
+                background-position: -5px -85px;
+                background-repeat: no-repeat;
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                border-radius: 50%;
+                border: 1px dashed black;
+            }
+            .imgcontainer4:hover{
+            background-position: -5px -275px;
+            background-color:#FD435D;
+            transition: background 0.5s;
+        }
+        }
+        .throat{
+            grid-row: 3/4;
+            grid-column: 5/9;
+            margin-top: 70px;
+            text-align: center;
+            .imgcontainer5{
+                background-image: url(sprite2.png);
+                background-repeat: no-repeat;
+                background-position: -15px -85px;
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                border-radius: 50%;
+                border: 1px dashed black;
+            }
+            .imgcontainer5:hover{
+                background-position: -16px -275px;
+                background-color:#FD435D;
+                transition: background 0.5s;
+            }
+        }
+        .pain{
+            grid-row: 3/4;
+            grid-column: 9/13;
+            margin-top: 70px;
+            text-align: center;
+            .imgcontainer6{
+                background-image: url(sprite3.png);
+                background-repeat: no-repeat;
+                background-position: -7px -85px;
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                border-radius: 50%;
+                border: 1px dashed black;
+            }
+            .imgcontainer6:hover{
+                background-position: -4px -275px;
+                background-color: #FD435D;
+                transition: background 0.5s;
+            }
+        }
+}
+/*end of symptoms*/
+
+/* protection*/
+
+
+.protectionheader{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top:50px;
+
+    h1{
+    color:#3B3C4C;
+    font-weight: bold;
+    }
+
+    p{
+        font-style: italic;
+        font-size: 15px;
+        font-style: italic;
+        color:#787CA7;
+    }
+}
+
+.protectionrulesgrid{
+    display: grid;
+    grid-template-columns: 300px 150px 300px 150px 300px;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-image: url(https://raw.githubusercontent.com/becodeorg/Startup-Brussels-Johnson-5.25/master/1.The-Field/week_03/covid-19-challenge/images/protect-bg.png?token=AQ3NSGEIQITZ7P5PO656HGS7Q22Y2);
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 500px;
+    width:1200px;
+    margin: auto;
+    margin-bottom: 50px;
+    .wash{
+        grid-row:1/2;
+        grid-column: 1/2;
+        place-self: center;
+        text-align: center;
+
+        h4{
+            font-weight: bold;
+        }
+    }
+
+    .imgwash{
+        grid-row:1/2;
+        grid-column: 2/3;
+        place-self: center;
+        background-image: url(home&wash.png);
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 90px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: white;
+        background-position: -9px 2px;
+    }
+
+    .imgwash:hover{
+        background-position: -10px -190px;
+        background-color:#FD435D;
+        transition: background 0.5s;
+
+    }
+
+    .avoid{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        place-self: center;
+        text-align: center;
+
+        h4{
+            font-weight: bold;
+        }
+    }
+
+    .imgavoid{
+        grid-row: 2/3;
+        grid-column:2/3;
+        place-self: center;
+        background-image: url(contact&cover.png);
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 90px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: white;
+        background-position: -9px -5px;
+    }
+
+    .imgavoid:hover{
+        background-position: -9px -193px;
+        background-color:#FD435D;
+        transition: background 0.5s;
+    }
+    .wear{
+        grid-row: 3/4;
+        grid-column: 1/2;
+        place-self: center;
+        text-align: center;
+
+        h4{
+            font-weight: bold;
+        }
+    }
+
+    .imgwear{
+        grid-row: 3/4;
+        grid-column: 2/3;
+        place-self: center;
+        background-image: url(coverface.png);
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 90px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: white;
+        background-position: -18px -92px;
+    }
+
+    .imgwear:hover{
+        background-position: -17px -287px;
+        background-color:#FD435D;
+        transition: background 0.5s;
+    }
+
+    .cover{
+        grid-row: 1/2;
+        grid-column: 5/6;
+        place-self: center;
+        text-align: center;
+
+        h4{
+            font-weight: bold;
+        }
+    }
+
+    .imgcover{
+        grid-row: 1/2;
+        grid-column: 4/5;
+        place-self: center;
+        background-image: url(coverface.png);
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 90px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: white;
+        background-position: -17px -1px;
+    }
+
+    .imgcover:hover{
+        background-position: -18px -191px;
+        background-color:#FD435D;
+        transition: background 0.5s;
+    }
+
+    .distance{
+        grid-row: 2/3;
+        grid-column: 5/6;
+        place-self: center;
+        text-align: center;
+
+        h4{
+            font-weight: bold;
+        }
+    }
+
+    .imgdistance{
+        grid-row: 2/3;
+        grid-column: 4/5;
+        place-self: center;
+        background-image: url(home&wash.png);
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 90px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: white;
+        background-position: -8px -97px;
+    }
+
+    .imgdistance:hover{
+        background-position: -9px -290px;
+        background-color:#FD435D;
+        transition: background 0.5s;
+        }
+
+    .face{
+        grid-row: 3/4;
+        grid-column: 5/6;
+        place-self: center;
+        text-align: center;
+
+        h4{
+            font-weight: bold;
+        }
+    }
+
+    .imgface{
+        grid-row: 3/4;
+        grid-column: 4/5;
+        place-self: center;
+        background-image: url(contact&cover.png);
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 90px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: white;
+        background-position: -6px -98px;
+    }
+
+    .imgface:hover{
+        background-position: -7px -292px;
+        background-color:#FD435D;
+        transition: background 0.5s;
+    }
+}
+
+/*end of protection*/
+
+/*start of subscribe form*/
+
+.formcontainer{
+    background-image:url(https://raw.githubusercontent.com/becodeorg/Startup-Brussels-Johnson-5.25/master/1.The-Field/week_03/covid-19-challenge/images/subscribe-bg.jpg?token=AQ3NSGAQ46CSB5ZTYEFCH2C7Q3IFE);
+    background-repeat:no-repeat;
+    height: 300px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    h1{
+        color: white;
+        margin-left: 200px;
+    }
+
+    input[type=text]{
+        background-color:#16253C;
+        border: 1px solid grey;
+        border-radius:25px;
+        width: 600px;
+        height: 50px;
+        padding-right: 30px;        
+    }
+    
+    ::placeholder{
+        color:darkgrey;
+    }
+
+    button{
+        color:white;
+        background-color:#FD435D;
+        padding:5px;
+        border-radius: 50px;
+        border:none;
+        padding: 10px 20px 10px 20px;
+        margin-top: 10px;
+        margin-left:-50px;
+        height: 50px;
+        width: 175px;
+    }
+}
+
+/* end of subscribe form*/
+
+/* start of questions part*/
+
+.questionspart{
+    background-image: url(https://raw.githubusercontent.com/becodeorg/Startup-Brussels-Johnson-5.25/master/1.The-Field/week_03/covid-19-challenge/images/Picture02.png?token=AQ3NSGCXCTMJAYI4XPWSP627Q3ZWU);
+    height: 1000px;
+    background-size: 900px;
+    background-repeat: repeat-x;
+
+    .questionheader{
+        text-align:center;
+        border: 1px solid black;
+        width: 1200px;
+        margin-left: 200px;
+        background-color:#E5EAED;
+    }
+
+    .bigaccordeon{
+        height: 510px;
+        width: 1200px;
+        margin-left: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: 1px solid black;
+        background-color:#E5EAED;
+    }
+
+    .accordeoncontainer1{
+        border: 1px solid red;
+        width: 600px;
+    }
+
+    .accordeoncontainer2{
+        border: 1px solid black;
+        width: 600px;
+        padding-right: -200px;
+    }
+}
+
+
+ /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color:#E5EAED;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #E5EAED;
+}
+
+  /* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color:#E5EAED;
+} 
